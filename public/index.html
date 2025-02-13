@@ -57,7 +57,33 @@
 <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
 
+<style>
+  @keyframes typing {
+      from {
+          width: 0;
+      }
+      to {
+          width: 100%;
+      }
+  }
 
+  @keyframes blink {
+      50% {
+          border-color: transparent;
+      }
+  }
+
+  .signature-container {
+      font-family: 'Courier New', monospace;
+      font-size: 24px;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid black;
+      width: 0;
+      display: inline-block;
+      animation: typing 3s steps(40, end) forwards, blink 0.8s step-end infinite;
+  }
+</style>
 
 
 
@@ -92,7 +118,8 @@
       <img src="/img/portfolio-avatar.png" class="w-28 xl:w-36 rounded-full" alt="#portfolio-avatar" title="#portfolio-avatar" />
     </a>
     <a href="/">
-      <h1 class="text-lg lg:text-xl px-2 lg:px-3 font-medium">Chiedu Onwuemene</h1>
+      <!-- <h1 class="text-lg lg:text-xl px-2 lg:px-3 font-medium">Chiedu Onwuemene</h1> -->
+      <div class="signature-container">const ChieduOnwuemene = () => {};</div>
     </a>
   </div>
   <div class="hidden lg:block">
